@@ -1,43 +1,42 @@
-# Airport Challenge!
+# Airport Challenge
 
+[![Build Status](https://travis-ci.org/kaaristrack/airport_challenge.svg?branch=master)](https://travis-ci.org/kaaristrack/airport_challenge)
+
+## Synopsis
+
+Welcome to my repo for the Makers Academy weekend challenge 1:1!
+
+My task was to create an emulation of an airport environment, in which planes can take off and land. To do this, I needed to implement guard classes to defend against the appropriate edge case, e.g planes are only able to take off from their current airport, etc.
+
+### Key Focus
+
+Object-Oriented Design (OOD) & Test-Driven Development (TDD).
+
+## Implementation
+
+1) Clone this repository, and change into the correct directory.
 ```
-        ______
-        _\____\___
-=  = ==(____HI____)
-          \_____\___________________,-~~~~~~~`-.._
-          /     o o o o o o o o o o o o o o o o  |\_
-          `~-.__       __..----..__         Ruby!    )
-                `---~~\___________/------------`````
-                =  ===(_________)
-
+$ git https://github.com/kaaristrack/airport_challenge
+$ cd airport_challenge
 ```
-## Introduction
-
-Welcome to my repo for the Makers Academy weekend challenge(1). My task was to test drive the creation of a set of classes/modules to satisfy the user stories below. In order to achieve my goals, I needed to implement guard classes to defend against edge cases, thereby ensuring that the planes in my test were only able to take off from airports that they are currently residing in.
-
-## Useage
-
+2) Open in IRB or PRY.
 ```
-[1] pry(main)> require "./lib/airport"
-=> true
-[2] pry(main)> airport = Airport.new
+$ pry
+  > require './file_collective.rb'
+```
+3) Create a new airport.
+```
+$ pry
+  > airport = Airport.new
+```
+4) Populate your new airport with a plane object.
+```
+> plane = Plane.new
+> airport.landing(plane)
 => #<Airport:0x00007ffc10079a18 @airport_hangar=[], @capacity=5, @taxied_planes=0, @weather=#<Weather:0x00007ffc100799c8>>
-[3] pry(main)> plane = Plane.new
-=> #<Plane:0x00007ffc100a1068>
 ```
+5) Marvel at the automatically updating capacity!
 
-## Step x Step
+### Demo Reel :movie_camera:
 
-In order to be successful at this project, my code **MUST**:
-- [x] Instruct a plane to land at the airport.
-- [x] Instruct a plane to take off from the airport.
-- [x] Confirm that the departed plane(s) are no longer at the airport.
-- [ ]  Prevent departures and landings when the weather is "stormy".
-- [x]  Prevent arrivals when the airport is full.
-- [ ]  Set a default airport capacity that can be overridden as necessary.
-
-## Future goals ##
-
-If I had to repeat this task, I would:
-1. Create more conditional factors that enable a plane to land at an airport (i.e size of plane?)
-2. Board passengers!
+[COMING SOON]
