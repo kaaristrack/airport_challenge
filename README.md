@@ -6,6 +6,8 @@
 
 Welcome to my repo for the Makers Academy weekend challenge 1:1!
 
+<img align="right" src="https://cdn.pixabay.com/photo/2013/07/12/13/53/aeroplane-147495_960_720.png" width="100"/>
+
 My task was to create an emulation of an airport environment, in which planes can take off and land. To do this, I needed to implement guard classes to defend against the appropriate edge case, e.g planes are only able to take off from their current airport, etc.
 
 ### Key Focus
